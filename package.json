@@ -1,0 +1,20 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest --coverage --watchAll --testEnvironment=jsdom"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.1.2",
+    "jest-environment-jsdom": "^29.1.2"
+  },
+  "jest": {
+    "testEnvironmentOptions": {
+      "html": "<select name=\"limits\" id=\"limits\"><option value=\"20\">20</option><option value=\"50\">50</option><option value=\"100\">100</option><option value=\"200\">200</option></select><ul id=\"lista-pokemons\"></ul><button id=\"btn-anterior\">Anterior</button><button id=\"btn-proximo\">Próximo</button><p id=\"paginas\"></p>}"
+    }
+  }
+}
