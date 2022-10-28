@@ -5,19 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedex</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
   </head>
 
-  <body>
-    <select name="limits" id="limits">
-      <option value="20">20</option>
-      <option value="50">50</option>
-      <option value="100">100</option>
-      <option value="200">200</option>
-    </select>
-    <ul id="lista-pokemons"></ul>
-    <button id="btn-anterior">Anterior</button>
-    <button id="btn-proximo">Próximo</button>
-    <p id="paginas"></p>
+  <body class="has-background-grey-lighter">
+    <div class="select is-primary">
+      <select name="limits" id="limits" class="mx-2">
+        <option value="20">20</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+      </select>
+    </div>
+
+    <div class="mx-3">
+      <h1 class="has-text-black">Lista de Pokemons</h1>
+      <ul id="lista-pokemons"></ul>
+    </div>
+
+    <div>
+      <button id="btn-anterior" class="button is-light">Anterior</button>
+      <button id="btn-proximo" class="button is-dark">Próximo</button>
+      <p id="paginas"></p>
+    </div>
+
+    <section class="section">
+      <div id="pokemon-selecionado" class="my-2">
+        <p id="nome-pokemon-selecionado" class="my-2"></p>
+        <img id="imagem-pokemon-selecionado" />
+        <p id="atributos-pokemon-selecionado" class="my-2"></p>
+        <p id="caracteristicas-pokemon-selecionado" class="my-2"></p>
+        <p id="altura-peso-pokemon-selecionado" class="my-2"></p>
+      </div>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>
